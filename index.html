@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+
+            <h1 class="text-center my-5">LISTA DE COMPRAS</h1>
+
+            <div class="row bg-white">
+                <div class="col-12 col-sm-6 mb-5 col-primario">
+                    <h1 class="text-center mb-5 mt-3">Agregar Compras</h1>
+                    <form id="formulario">
+                        <div class="form-group mb-4">
+                            <label for="formGroupExampleInput">Compra</label>
+                            <input type="text" class="form-control" id="compra" placeholder="Ingresa la compra">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Costo</label>
+                            <input type="text" class="form-control" id="costo" placeholder="Ingresa el costo de la compra">
+                        </div>
+
+                        <div class="btn-agregar text-center  mt-4">
+                            <button type="submit" id="agregar-compra" class="btn btn-primary">Agregar Compra</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-12 col-sm-6 mt-5 col-secundario">
+                    <h1 class="text-center mb-4">Lista de compras</h1>
+
+                    <div class="mb-5">
+                        <ul class="list-group" id="lista-compras">
+
+                        </ul>
+                    </div>
+
+                    <div class="presupuesto-restante d-flex flex-column align-items-center ">
+                        <div class="presupuesto alert alert-primary py-3 px-2">
+                            <p>Presupuesto: <span id="presupuesto"></span></p>
+                        </div>
+
+                        <div class="restante alert alert-success py-3 px-2">
+                            <p>Restante: <span id="restante"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+                
+
+        </div>
+    </header>
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

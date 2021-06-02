@@ -1,0 +1,39 @@
+body{
+    background: rgba(41, 192, 212, 0.616);
+}
+
+.presupuesto,
+.restante{
+    padding: 0;
+    border: 0;
+    width: 100%;
+}
+
+.presupuesto p,
+.restante p{
+    margin: 0;
+}
+
+.row{
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media (min-width:600px){
+    .col-primario h1{
+        margin-top: 3rem !important;
+    }
+
+    .col-secundario{
+        margin: 0;
+    }
+
+    .presupuesto,
+    .restante{
+        width: 100%;
+    }
+
+    .row{
+        width: 100%;
+    }
+}
